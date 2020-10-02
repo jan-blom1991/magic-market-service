@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend-Angular" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aV9SWf1KYOwgHUfIubuXm3Tm3n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\Java files\MagicWebShop\Backend\src\main\resources\static\assets" />
+      <recent name="C:\Programming\Java files\MagicWebShop\Backend\src\main\resources\static" />
+      <recent name="C:\Programming\Java files\MagicWebShop\Backend\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jan.MagicWebShop.BackendApplication" />
+      <module name="Backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jan.MagicWebShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BackendApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="" />
+      <created>1586809893685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586809893685</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Angular-Magic-Web-Shop" />
+      <path value="$PROJECT_DIR$/Frontend-Angular" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="669" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1595264064418">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="669" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1595264064418" />
+    <state x="1500" y="456" key="FileChooserDialogImpl" timestamp="1600547573232">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1500" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1600547573232" />
+    <state width="1674" height="545" key="GridCell.Tab.0.bottom" timestamp="1598025971142">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="545" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
+    <state width="1674" height="545" key="GridCell.Tab.0.center" timestamp="1598025971142">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="545" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
+    <state width="1674" height="545" key="GridCell.Tab.0.left" timestamp="1598025971142">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="545" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
+    <state width="1674" height="545" key="GridCell.Tab.0.right" timestamp="1598025971142">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="545" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
+    <state x="368" y="342" key="SettingsEditor" timestamp="1594394540793">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="368" y="342" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1594394540793" />
+  </component>
+</project>
