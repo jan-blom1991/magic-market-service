@@ -1,5 +1,9 @@
-package com.jan.MagicWebShop.controller;
+package com.jan.MagicWebShop.controller.services;
 
+import com.jan.MagicWebShop.controller.repositories.AddressRepository;
+import com.jan.MagicWebShop.controller.repositories.PurchaseOrderRepository;
+import com.jan.MagicWebShop.controller.repositories.ShoppingCartRepository;
+import com.jan.MagicWebShop.controller.repositories.UserRepository;
 import com.jan.MagicWebShop.domain.Address;
 import com.jan.MagicWebShop.domain.User;
 import com.jan.MagicWebShop.domain.PurchaseOrder;

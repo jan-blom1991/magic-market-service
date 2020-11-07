@@ -1,5 +1,6 @@
-package com.jan.MagicWebShop.controller;
+package com.jan.MagicWebShop.controller.services;
 
+import com.jan.MagicWebShop.controller.repositories.UserRepository;
 import com.jan.MagicWebShop.domain.UserPrincipal;
 import com.jan.MagicWebShop.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;

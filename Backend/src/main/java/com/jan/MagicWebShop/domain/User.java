@@ -14,7 +14,7 @@ public class User {
     private String emailAddress;
     private String username;
     private String password;
-    private String bankAccountNumber;
+    private String IBAN;
     private boolean active;
     private String role;
 
@@ -68,12 +68,12 @@ public class User {
         this.password = password;
     }
 
-    public String getBankAccountNumber() {
-        return bankAccountNumber;
+    public String getIBAN() {
+        return IBAN;
     }
 
-    public void setBankAccountNumber(String bankAccountNumber) {
-        this.bankAccountNumber = bankAccountNumber;
+    public void setIBAN(String IBAN) {
+        this.IBAN = IBAN;
     }
 
     public boolean isActive() {

@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/CartItemEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/CartItemEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/UserEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/UserEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/CartItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/CartItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend-Angular" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +51,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1aV9SWf1KYOwgHUfIubuXm3Tm3n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -87,6 +106,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Angular-Magic-Web-Shop" />
@@ -94,33 +124,33 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="669" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1595264064418">
+    <state x="672" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1604760959520">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="669" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1595264064418" />
+    <state x="672" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1604760959520" />
     <state x="1500" y="456" key="FileChooserDialogImpl" timestamp="1600547573232">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1500" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1600547573232" />
-    <state width="1674" height="545" key="GridCell.Tab.0.bottom" timestamp="1598025971142">
+    <state width="1674" height="371" key="GridCell.Tab.0.bottom" timestamp="1604761144675">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="545" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
-    <state width="1674" height="545" key="GridCell.Tab.0.center" timestamp="1598025971142">
+    <state width="1674" height="371" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
+    <state width="1674" height="371" key="GridCell.Tab.0.center" timestamp="1604761144675">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="545" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
-    <state width="1674" height="545" key="GridCell.Tab.0.left" timestamp="1598025971142">
+    <state width="1674" height="371" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
+    <state width="1674" height="371" key="GridCell.Tab.0.left" timestamp="1604761144675">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="545" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
-    <state width="1674" height="545" key="GridCell.Tab.0.right" timestamp="1598025971142">
+    <state width="1674" height="371" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
+    <state width="1674" height="371" key="GridCell.Tab.0.right" timestamp="1604761144675">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="545" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1598025971142" />
-    <state x="368" y="342" key="SettingsEditor" timestamp="1594394540793">
+    <state width="1674" height="371" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
+    <state x="599" y="420" key="RollbackChangesDialog" timestamp="1604758403581">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="368" y="342" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1594394540793" />
+    <state x="599" y="420" key="RollbackChangesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1604758403581" />
   </component>
 </project>

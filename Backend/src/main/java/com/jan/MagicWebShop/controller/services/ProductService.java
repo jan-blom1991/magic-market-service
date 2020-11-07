@@ -1,16 +1,15 @@
-package com.jan.MagicWebShop.controller;
+package com.jan.MagicWebShop.controller.services;
 
-import com.jan.MagicWebShop.domain.CartItem;
+import com.jan.MagicWebShop.controller.repositories.CartItemRepository;
+import com.jan.MagicWebShop.controller.repositories.ProductRepository;
+import com.jan.MagicWebShop.controller.repositories.ShoppingCartRepository;
 import com.jan.MagicWebShop.domain.Product;
-import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Blob;
 
 
 @Service
@@ -28,6 +27,10 @@ public class ProductService {
 
     public Iterable<Product> getAllProducts() {
         return pr.findAll();
+    }
+
+    public Iterable<Product> getAllProductsByCategory(String category) {
+        return pr.findAllByCategory(category);
     }
 
     public void addProduct(Product product) {

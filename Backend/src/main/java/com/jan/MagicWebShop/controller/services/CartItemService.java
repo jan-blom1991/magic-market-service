@@ -1,13 +1,13 @@
-package com.jan.MagicWebShop.controller;
+package com.jan.MagicWebShop.controller.services;
 
+import com.jan.MagicWebShop.controller.repositories.CartItemRepository;
+import com.jan.MagicWebShop.controller.repositories.ProductRepository;
+import com.jan.MagicWebShop.controller.repositories.ShoppingCartRepository;
 import com.jan.MagicWebShop.domain.CartItem;
-import com.jan.MagicWebShop.domain.ShoppingCart;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
 
 @Service
 @Transactional
