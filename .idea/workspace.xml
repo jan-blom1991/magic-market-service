@@ -23,17 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/CartItemEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/CartItemEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/ProductEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/UserEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/api/UserEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/CartItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/CartItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/config/CORSfilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/controller/services/MyUserDetailsService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/jan/MagicWebShop/domain/UserPrincipal.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +62,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -104,6 +107,14 @@
       <option name="presentableId" value="Default" />
       <updated>1586809893685</updated>
     </task>
+    <task id="LOCAL-00001" summary="2nd commit">
+      <created>1604761476615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604761476615</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,35 +133,69 @@
       <path value="$PROJECT_DIR$/Angular-Magic-Web-Shop" />
       <path value="$PROJECT_DIR$/Frontend-Angular" />
     </ignored-roots>
+    <MESSAGE value="2nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="672" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1604760959520">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="672" y="384" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1604760959520" />
+    <state x="597" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604761985665">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="597" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1604761985665" />
+    <state x="481" y="268" key="CommitChangelistDialog2" timestamp="1604761475515">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="481" y="268" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1604761475515" />
     <state x="1500" y="456" key="FileChooserDialogImpl" timestamp="1600547573232">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1500" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1600547573232" />
-    <state width="1674" height="371" key="GridCell.Tab.0.bottom" timestamp="1604761144675">
+    <state width="1674" height="488" key="GridCell.Tab.0.bottom" timestamp="1604795009349">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="371" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
-    <state width="1674" height="371" key="GridCell.Tab.0.center" timestamp="1604761144675">
+    <state width="1674" height="488" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
+    <state width="1674" height="488" key="GridCell.Tab.0.center" timestamp="1604795009348">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="371" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
-    <state width="1674" height="371" key="GridCell.Tab.0.left" timestamp="1604761144675">
+    <state width="1674" height="488" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009348" />
+    <state width="1674" height="488" key="GridCell.Tab.0.left" timestamp="1604795009348">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="371" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
-    <state width="1674" height="371" key="GridCell.Tab.0.right" timestamp="1604761144675">
+    <state width="1674" height="488" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009348" />
+    <state width="1674" height="488" key="GridCell.Tab.0.right" timestamp="1604795009349">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1674" height="371" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1604761144675" />
+    <state width="1674" height="488" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
+    <state width="1674" height="488" key="GridCell.Tab.1.bottom" timestamp="1604795009349">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="488" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
+    <state width="1674" height="488" key="GridCell.Tab.1.center" timestamp="1604795009349">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="488" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
+    <state width="1674" height="488" key="GridCell.Tab.1.left" timestamp="1604795009349">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="488" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
+    <state width="1674" height="488" key="GridCell.Tab.1.right" timestamp="1604795009349">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="488" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1604795009349" />
     <state x="599" y="420" key="RollbackChangesDialog" timestamp="1604758403581">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="599" y="420" key="RollbackChangesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1604758403581" />
+    <state x="459" y="433" key="Vcs.Push.Dialog.v2" timestamp="1604761481593">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="459" y="433" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1604761481593" />
+    <state x="684" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604761770361">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="684" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.3440.1400@0.0.3440.1400" timestamp="1604761770361" />
   </component>
 </project>
