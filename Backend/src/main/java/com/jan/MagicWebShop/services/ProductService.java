@@ -1,8 +1,8 @@
-package com.jan.MagicWebShop.controller.services;
+package com.jan.MagicWebShop.services;
 
-import com.jan.MagicWebShop.controller.repositories.CartItemRepository;
-import com.jan.MagicWebShop.controller.repositories.ProductRepository;
-import com.jan.MagicWebShop.controller.repositories.ShoppingCartRepository;
+import com.jan.MagicWebShop.repositories.CartItemRepository;
+import com.jan.MagicWebShop.repositories.ProductRepository;
+import com.jan.MagicWebShop.repositories.ShoppingCartRepository;
 import com.jan.MagicWebShop.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,34 +16,31 @@ import java.io.IOException;
 @Transactional
 public class ProductService {
 
-    @Autowired
-    ProductRepository pr;
+    ProductRepository productRepository;
 
-    @Autowired
-    CartItemRepository cir;
+    CartItemRepository cartItemRepository;
 
-    @Autowired
-    ShoppingCartRepository scr;
+    ShoppingCartRepository shoppingCartRepository;
 
-    public Iterable<Product> getAllProducts() {
-        return pr.findAll();
+    public Iterable<Product> getProducts() {
+        return productRepository.findAll();
     }
 
-    public Iterable<Product> getAllProductsByCategory(String category) {
-        return pr.findAllByCategory(category);
+    public Iterable<Product> getProductsByCategory (String category) {
+        return productRepository.findByCategory(category);
     }
 
     public void addProduct(Product product) {
-        pr.save(product);
+        productRepository.save(product);
     }
 
     public void removeProduct(Long id) {
-        pr.deleteById(id);
+        productRepository.deleteById(id);
     }
 
     public void saveImageToProduct(Long id, MultipartFile file) {
         try {
-            Product product = pr.findById(id).get();
+            Product product = productRepository.findById(id).get();
             byte[] bytes = file.getBytes();
             product.setImage(bytes);
         }

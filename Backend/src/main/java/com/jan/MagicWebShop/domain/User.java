@@ -3,7 +3,6 @@ package com.jan.MagicWebShop.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "User")
 public class User {
 
     @Id
@@ -24,7 +23,7 @@ public class User {
     private ShoppingCart shoppingCart;
 
     @OneToOne
-    private PurchaseOrder purchaseOrder;
+    private Order order;
 
 
     public long getId() {
@@ -99,11 +98,11 @@ public class User {
         this.shoppingCart = shoppingCart;
     }
 
-    public PurchaseOrder getPurchaseOrder() {
-        return purchaseOrder;
+    public Order getPurchaseOrder() {
+        return order;
     }
 
-    public void setPurchaseOrder(PurchaseOrder purchaseOrder) {
-        this.purchaseOrder = purchaseOrder;
+    public void setPurchaseOrder(Order order) {
+        this.order = order;
     }
 }

@@ -1,4 +1,4 @@
-package com.jan.MagicWebShop.controller.repositories;
+package com.jan.MagicWebShop.repositories;
 
 import com.jan.MagicWebShop.domain.CartItem;
 import org.springframework.data.repository.CrudRepository;

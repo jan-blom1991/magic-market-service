@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class PurchaseOrder {
+public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
