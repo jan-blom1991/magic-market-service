@@ -6,22 +6,25 @@ import javax.persistence.*;
 public class Image {
 
     @Id
+    @Column(name = "image_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
+    @Column
     private String fileName;
 
+    @Column
     private String contentType;
 
     @Lob
     @Column(length=200000)
     private byte[] bytes;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

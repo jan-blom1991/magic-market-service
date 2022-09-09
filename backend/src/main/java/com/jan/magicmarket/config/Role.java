@@ -1,7 +1,6 @@
 package com.jan.magicmarket.config;
 
 public enum Role {
-
     ADMINISTRATOR("ADMINISTRATOR"),
     MANAGER("MANAGER"),
     EMPLOYEE("EMPLOYEE"),

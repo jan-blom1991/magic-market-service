@@ -3,37 +3,48 @@ package com.jan.magicmarket.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name="address")
 public class Address {
 
     @Id
+    @Column(name = "address_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long addressId;
+    private Long id;
 
+    @Column
     private String streetName;
+
+    @Column
     private Integer houseNumber;
+
+    @Column
     private String city;
+
+    @Column
     private String state;
+
+    @Column
     private String postalCode;
+
+    @Column
     private String country;
 
-    @ManyToOne
-    @JoinColumn(name="user_id", nullable=false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
     private User user;
 
-    public long getAddressId() {
-        return addressId;
+    public Long getId() {
+        return id;
     }
 
-    public void setAddressId(long addressId) {
-        this.addressId = addressId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getStreet() {
+    public String getStreetName() {
         return streetName;
     }
 
-    public void setStreet(String streetName) {
+    public void setStreetName(String streetName) {
         this.streetName = streetName;
     }
 
@@ -75,5 +86,13 @@ public class Address {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

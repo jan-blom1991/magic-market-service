@@ -7,31 +7,53 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name="user")
 public class User {
 
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long userId;
+    private Long id;
 
+    @Column
     private String firstName;
+
+    @Column
     private String lastName;
+
+    @Column
     private Gender gender;
+
+    @Column
     private String emailAddress;
+
+    @Column
     private String password;
+
+    @Column
     private String IBAN;
+
+    @Column
     private Role role;
-    private boolean active;
+
+    @Column
+    private Boolean active;
+
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "cart_id")
+    private Cart currentCart;
 
     @OneToMany(mappedBy = "user")
-    private Set<Address> address;
+    private Set<Address> addressList;
 
-    public long getUserId() {
-        return userId;
+    @OneToMany(mappedBy = "user")
+    private Set<Order> orderList;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -82,14 +104,6 @@ public class User {
         this.IBAN = IBAN;
     }
 
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
     public Role getRole() {
         return role;
     }
@@ -98,11 +112,35 @@ public class User {
         this.role = role;
     }
 
-    public Set<Address> getAddress() {
-        return address;
+    public Boolean getActive() {
+        return active;
     }
 
-    public void setAddress(Set<Address> address) {
-        this.address = address;
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
+    public Cart getCurrentCart() {
+        return currentCart;
+    }
+
+    public void setCurrentCart(Cart currentCart) {
+        this.currentCart = currentCart;
+    }
+
+    public Set<Address> getAddressList() {
+        return addressList;
+    }
+
+    public void setAddressList(Set<Address> addressList) {
+        this.addressList = addressList;
+    }
+
+    public Set<Order> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(Set<Order> orderList) {
+        this.orderList = orderList;
     }
 }

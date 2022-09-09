@@ -6,33 +6,61 @@ import javax.persistence.*;
 public class CartItem {
 
     @Id
+    @Column(name = "cart_item_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long id;
+    private Long id;
 
-    private int quantity;
-    private double itemSubTotal;
+    @Column
+    private Integer quantity;
 
-    public long getId() {
+    @Column
+    private Double itemSubTotal;
+
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "product_id")
+    private Product product;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "cart_id")
+    private Cart cart;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 
-    public double getItemSubTotal() {
+    public Double getItemSubTotal() {
         return itemSubTotal;
     }
 
-    public void setItemSubTotal(double itemSubTotal) {
+    public void setItemSubTotal(Double itemSubTotal) {
         this.itemSubTotal = itemSubTotal;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
     }
 }

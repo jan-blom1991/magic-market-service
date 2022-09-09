@@ -6,26 +6,58 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class PurchaseOrder {
+public class Order {
 
     @Id
+    @Column(name = "order_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long purchaseOrderId;
+    private Long Id;
 
+    @Column
+    private Double shippingCost;
+
+    @Column
+    private Double totalCost;
+
+    @Column
     private LocalDateTime dateOfOrder;
+
+    @Column
     private LocalDateTime dateOfShipping;
+
+    @Column
     private OrderStatus orderStatus;
 
-    @OneToOne
-    @MapsId
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    public long getPurchaseOrderId() {
-        return purchaseOrderId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public Long getId() {
+        return Id;
     }
 
-    public void setPurchaseOrderId(long purchaseOrderId) {
-        this.purchaseOrderId = purchaseOrderId;
+    public void setId(Long id) {
+        Id = id;
+    }
+
+    public Double getShippingCost() {
+        return shippingCost;
+    }
+
+    public void setShippingCost(Double shippingCost) {
+        this.shippingCost = shippingCost;
+    }
+
+    public Double getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(Double totalCost) {
+        this.totalCost = totalCost;
     }
 
     public LocalDateTime getDateOfOrder() {
@@ -52,11 +84,11 @@ public class PurchaseOrder {
         this.orderStatus = orderStatus;
     }
 
-    public Cart getCart() {
-        return cart;
+    public User getUser() {
+        return user;
     }
 
-    public void setCart(Cart cart) {
-        this.cart = cart;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

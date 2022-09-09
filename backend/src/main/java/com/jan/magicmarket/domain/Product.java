@@ -1,25 +1,41 @@
 package com.jan.magicmarket.domain;
 
+import com.jan.magicmarket.config.ProductCategory;
+
 import javax.persistence.*;
 
 @Entity
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    @Column(name = "product_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
+    @Column
     private String name;
-    private String category;
-    private String description;
-    private int stock;
-    private double price;
 
-    public long getId() {
+    @Column
+    private ProductCategory productCategory;
+
+    @Column
+    private String description;
+
+    @Column
+    private int stock;
+
+    @Column
+    private Double price;
+
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "card_id")
+    private Card card;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -31,12 +47,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getCategory() {
-        return category;
+    public ProductCategory getProductCategory() {
+        return productCategory;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setProductCategory(ProductCategory productCategory) {
+        this.productCategory = productCategory;
     }
 
     public String getDescription() {
@@ -55,11 +71,19 @@ public class Product {
         this.stock = stock;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
     }
 }

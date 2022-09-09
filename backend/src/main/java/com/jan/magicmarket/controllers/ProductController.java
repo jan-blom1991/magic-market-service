@@ -18,7 +18,7 @@ public class ProductController {
     }
 
     @PostMapping()
-    public long addProduct(@RequestBody Product product) {
+    public Long addProduct(@RequestBody Product product) {
         product = productService.addProduct(product);
         System.out.println(product.getId());
         return product.getId();
@@ -30,12 +30,12 @@ public class ProductController {
     }
 
     @DeleteMapping("/{productId}")
-    public void removeProduct(@PathVariable long productId) {
+    public void removeProduct(@PathVariable Long productId) {
         productService.removeProduct(productId);
     }
 
-    @GetMapping("/?category={productCategory}")
-    public Iterable<Product> getProductsByCategory(@PathVariable String productCategory) {
-        return productService.getProductsByCategory(productCategory);
-    }
+//    @GetMapping("/?category={productCategory}")
+//    public Iterable<Product> getProductsByCategory(@PathVariable String productCategory) {
+//        return productService.getProductsByCategory(productCategory);
+//    }
 }

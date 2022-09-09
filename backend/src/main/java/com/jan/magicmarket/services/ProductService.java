@@ -22,10 +22,6 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Iterable<Product> getProductsByCategory (String category) {
-        return productRepository.findByCategory(category);
-    }
-
     public Product addProduct(Product product) {
         return productRepository.save(product);
     }

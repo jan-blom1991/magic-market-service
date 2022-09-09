@@ -1,29 +1,43 @@
 package com.jan.magicmarket.domain;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Cart {
 
     @Id
+    @Column(name = "cart_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long cartId;
+    private Long id;
 
-    private double subTotal;
+    @Column
+    private Double subTotal;
 
-    public long getCartId() {
-        return cartId;
+    @OneToMany(mappedBy = "cart")
+    private Set<CartItem> cartItemList;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setCartId(long cartId) {
-        this.cartId = cartId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public double getSubTotal() {
+    public Double getSubTotal() {
         return subTotal;
     }
 
-    public void setSubTotal(double subTotal) {
+    public void setSubTotal(Double subTotal) {
         this.subTotal = subTotal;
+    }
+
+    public Set<CartItem> getCartItemList() {
+        return cartItemList;
+    }
+
+    public void setCartItemList(Set<CartItem> cartItemList) {
+        this.cartItemList = cartItemList;
     }
 }

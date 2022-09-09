@@ -6,6 +6,4 @@ import org.springframework.data.repository.CrudRepository;
 
 @Component
 public interface ProductRepository extends CrudRepository<Product, Long> {
-
-    Iterable<Product> findByCategory(String category);
 }

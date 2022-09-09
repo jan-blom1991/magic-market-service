@@ -13,7 +13,7 @@ public class FileController {
     ProductService productService;
 
 //    @PostMapping("")
-//    public void addImageToProduct(@RequestParam long productId, @RequestBody MultipartFile[] files) throws IOException {
+//    public void addImageToProduct(@RequestParam Long productId, @RequestBody MultipartFile[] files) throws IOException {
 ////        productService.addImagesToProduct(productId, files);
 //    }
 
