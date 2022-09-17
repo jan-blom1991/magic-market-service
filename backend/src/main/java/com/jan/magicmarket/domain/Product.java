@@ -1,6 +1,6 @@
 package com.jan.magicmarket.domain;
 
-import com.jan.magicmarket.config.ProductCategory;
+import com.jan.magicmarket.config.constants.ProductCategory;
 
 import javax.persistence.*;
 

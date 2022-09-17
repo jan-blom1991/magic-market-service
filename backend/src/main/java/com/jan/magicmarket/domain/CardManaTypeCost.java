@@ -1,6 +1,6 @@
 package com.jan.magicmarket.domain;
 
-import com.jan.magicmarket.config.card.CardManaType;
+import com.jan.magicmarket.config.constants.CardManaType;
 
 import javax.persistence.*;
 
@@ -12,6 +12,7 @@ public class CardManaTypeCost {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CardManaType manaType;
 

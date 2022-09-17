@@ -1,7 +1,7 @@
 package com.jan.magicmarket.domain;
 
-import com.jan.magicmarket.config.Gender;
-import com.jan.magicmarket.config.Role;
+import com.jan.magicmarket.config.constants.Gender;
+import com.jan.magicmarket.config.constants.Role;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -21,6 +21,7 @@ public class User {
     private String lastName;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
     @Column
@@ -33,6 +34,7 @@ public class User {
     private String IBAN;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     @Column

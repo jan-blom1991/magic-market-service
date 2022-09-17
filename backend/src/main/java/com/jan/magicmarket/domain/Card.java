@@ -1,7 +1,8 @@
 package com.jan.magicmarket.domain;
 
-import com.jan.magicmarket.config.card.CardColor;
-import com.jan.magicmarket.config.card.CardType;
+import com.jan.magicmarket.config.constants.CardColor;
+import com.jan.magicmarket.config.constants.CardRarity;
+import com.jan.magicmarket.config.constants.CardType;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -14,17 +15,23 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CardColor color;
 
     @Column(nullable = false)
     private Integer manaValue;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CardType type;
 
     @Column
     private String subType;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private CardRarity rarity;
 
     @Column(nullable = false)
     private String set;

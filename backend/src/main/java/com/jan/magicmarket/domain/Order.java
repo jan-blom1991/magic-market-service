@@ -1,6 +1,6 @@
 package com.jan.magicmarket.domain;
 
-import com.jan.magicmarket.config.OrderStatus;
+import com.jan.magicmarket.config.constants.OrderStatus;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
