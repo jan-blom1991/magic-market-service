@@ -8,12 +8,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Card {
-
-    @Id
-    @Column(name = "card_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Card extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -53,14 +48,6 @@ public class Card {
 
     @OneToMany(mappedBy = "card")
     private Set<CardManaTypeCost> manaTypeCostList;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public CardColor getColor() {
         return color;

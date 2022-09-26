@@ -3,12 +3,7 @@ package com.jan.magicmarket.domain;
 import javax.persistence.*;
 
 @Entity
-public class Address {
-
-    @Id
-    @Column(name = "address_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Address extends BaseEntity {
 
     @Column
     private String streetName;
@@ -29,16 +24,8 @@ public class Address {
     private String country;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn
     private User user;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getStreetName() {
         return streetName;

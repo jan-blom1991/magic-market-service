@@ -6,12 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class Order {
-
-    @Id
-    @Column(name = "order_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+public class Order extends BaseEntity {
 
     @Column
     private Double shippingCost;
@@ -29,20 +24,12 @@ public class Order {
     private OrderStatus orderStatus;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "cart_id")
+    @JoinColumn
     private Cart cart;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn
     private User user;
-
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
-    }
 
     public Double getShippingCost() {
         return shippingCost;

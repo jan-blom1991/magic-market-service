@@ -7,12 +7,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class User {
-
-    @Id
-    @Column(name = "user_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class User extends BaseEntity {
 
     @Column
     private String firstName;
@@ -41,7 +36,7 @@ public class User {
     private Boolean active;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "cart_id")
+    @JoinColumn
     private Cart currentCart;
 
     @OneToMany(mappedBy = "user")
@@ -49,14 +44,6 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private Set<Order> orderList;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;

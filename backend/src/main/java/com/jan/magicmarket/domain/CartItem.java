@@ -3,12 +3,7 @@ package com.jan.magicmarket.domain;
 import javax.persistence.*;
 
 @Entity
-public class CartItem {
-
-    @Id
-    @Column(name = "cart_item_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class CartItem extends BaseEntity {
 
     @Column
     private Integer quantity;
@@ -17,20 +12,12 @@ public class CartItem {
     private Double itemSubTotal;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "product_id")
+    @JoinColumn
     private Product product;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cart_id")
+    @JoinColumn
     private Cart cart;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Integer getQuantity() {
         return quantity;

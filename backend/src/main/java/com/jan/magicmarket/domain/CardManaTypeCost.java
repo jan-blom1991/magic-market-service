@@ -5,12 +5,7 @@ import com.jan.magicmarket.config.constants.CardManaType;
 import javax.persistence.*;
 
 @Entity
-public class CardManaTypeCost {
-
-    @Id
-    @Column(name = "card_mana_type_cost_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class CardManaTypeCost extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -20,16 +15,8 @@ public class CardManaTypeCost {
     private Integer cost;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "card_id")
+    @JoinColumn
     private Card card;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public CardManaType getManaType() {
         return manaType;

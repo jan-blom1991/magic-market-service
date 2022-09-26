@@ -23,28 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponseSeverity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/CardColorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/CardTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/ProductCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/card/CardColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/card/CardManaType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardManaType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/card/CardRarity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardRarity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/card/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CardManaTypeCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CardManaTypeCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,6 +309,9 @@
       <workItem from="1662546042782" duration="5570000" />
       <workItem from="1662739767836" duration="27650000" />
       <workItem from="1663456030398" duration="1577000" />
+      <workItem from="1663954418607" duration="596000" />
+      <workItem from="1664022725586" duration="1727000" />
+      <workItem from="1664214273046" duration="1745000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1604761476615</created>

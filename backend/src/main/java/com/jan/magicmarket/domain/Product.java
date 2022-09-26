@@ -5,12 +5,7 @@ import com.jan.magicmarket.config.constants.ProductCategory;
 import javax.persistence.*;
 
 @Entity
-public class Product {
-
-    @Id
-    @Column(name = "product_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Product extends BaseEntity {
 
     @Column
     private String name;
@@ -28,16 +23,8 @@ public class Product {
     private Double price;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "card_id")
+    @JoinColumn
     private Card card;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

@@ -3,12 +3,7 @@ package com.jan.magicmarket.domain;
 import javax.persistence.*;
 
 @Entity
-public class Image {
-
-    @Id
-    @Column(name = "image_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Image extends BaseEntity {
 
     @Column
     private String fileName;
@@ -19,14 +14,6 @@ public class Image {
     @Lob
     @Column(length=200000)
     private byte[] bytes;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFileName() {
         return fileName;
