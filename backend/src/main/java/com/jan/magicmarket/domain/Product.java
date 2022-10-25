@@ -1,5 +1,6 @@
 package com.jan.magicmarket.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jan.magicmarket.config.constants.ProductCategory;
 
 import javax.persistence.*;
@@ -11,7 +12,7 @@ public class Product extends BaseEntity {
     private String name;
 
     @Column
-    private ProductCategory productCategory;
+    private ProductCategory category;
 
     @Column
     private String description;
@@ -26,6 +27,10 @@ public class Product extends BaseEntity {
     @JoinColumn
     private Card card;
 
+    @JsonInclude()
+    @Transient
+    private Long fileGroup;
+
     public String getName() {
         return name;
     }
@@ -34,12 +39,12 @@ public class Product extends BaseEntity {
         this.name = name;
     }
 
-    public ProductCategory getProductCategory() {
-        return productCategory;
+    public ProductCategory getCategory() {
+        return category;
     }
 
-    public void setProductCategory(ProductCategory productCategory) {
-        this.productCategory = productCategory;
+    public void setCategory(ProductCategory productCategory) {
+        this.category = productCategory;
     }
 
     public String getDescription() {
@@ -72,5 +77,13 @@ public class Product extends BaseEntity {
 
     public void setCard(Card card) {
         this.card = card;
+    }
+
+    public Long getFileGroup() {
+        return fileGroup;
+    }
+
+    public void setFileGroup(Long fileGroup) {
+        this.fileGroup = fileGroup;
     }
 }

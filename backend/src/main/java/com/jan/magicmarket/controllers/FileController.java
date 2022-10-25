@@ -1,20 +1,26 @@
 package com.jan.magicmarket.controllers;
 
-import com.jan.magicmarket.services.ProductService;
+import com.jan.magicmarket.services.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/files")
 public class FileController {
 
     @Autowired
-    ProductService productService;
+    FileService fileService;
 
-//    @PostMapping("")
-//    public void addImageToProduct(@RequestParam Long productId, @RequestBody MultipartFile[] files) throws IOException {
-////        productService.addImagesToProduct(productId, files);
-//    }
+    @PostMapping("")
+    public Long addProvisionalFile(@RequestParam("file") MultipartFile multipartFile) throws IOException {
+        return fileService.addProvisionalFile(multipartFile);
+    }
 
+    @GetMapping("/group")
+    public Long getNewProvisionalFileGroup() {
+        return fileService.getNewProvisionalFileGroup();
+    }
 }

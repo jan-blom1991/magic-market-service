@@ -1,7 +1,7 @@
 package com.jan.magicmarket.services;
 
 import com.jan.magicmarket.domain.Product;
-import com.jan.magicmarket.repositories.ImageRepository;
+import com.jan.magicmarket.repositories.FileRepository;
 import com.jan.magicmarket.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class ProductService {
     ProductRepository productRepository;
 
     @Autowired
-    ImageRepository imageRepository;
+    FileRepository fileRepository;
 
     public Iterable<Product> getProducts() {
         return productRepository.findAll();
