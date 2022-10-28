@@ -29,7 +29,7 @@ public class Product extends BaseEntity {
 
     @JsonInclude()
     @Transient
-    private Long fileGroup;
+    private Long fileGroupCode;
 
     public String getName() {
         return name;
@@ -79,11 +79,11 @@ public class Product extends BaseEntity {
         this.card = card;
     }
 
-    public Long getFileGroup() {
-        return fileGroup;
+    public Long getFileGroupCode() {
+        return fileGroupCode;
     }
 
-    public void setFileGroup(Long fileGroup) {
-        this.fileGroup = fileGroup;
+    public void setFileGroupCode(Long fileGroupCode) {
+        this.fileGroupCode = fileGroupCode;
     }
 }

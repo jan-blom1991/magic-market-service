@@ -1,5 +1,6 @@
 package com.jan.magicmarket.controllers;
 
+import com.jan.magicmarket.domain.ProvisionalFile;
 import com.jan.magicmarket.services.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,12 +16,7 @@ public class FileController {
     FileService fileService;
 
     @PostMapping("")
-    public Long addProvisionalFile(@RequestParam("file") MultipartFile multipartFile) throws IOException {
-        return fileService.addProvisionalFile(multipartFile);
-    }
-
-    @GetMapping("/group")
-    public Long getNewProvisionalFileGroup() {
-        return fileService.getNewProvisionalFileGroup();
+    public ProvisionalFile addProvisionalFile(@RequestParam("file") MultipartFile multipartFile, @RequestParam("fileGroupCode") Long fileGroupCode) throws IOException {
+        return fileService.addProvisionalFile(multipartFile, fileGroupCode);
     }
 }

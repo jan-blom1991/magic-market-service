@@ -1,22 +1,24 @@
 package com.jan.magicmarket.config.constants;
 
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.jan.magicmarket.util.Labeled;
 
-public enum ProductCategory {
+public enum ProductCategory implements Labeled<String> {
     MAGIC_CARD("Magic card"),
     MAGIC_BOOSTER_PACK("Magic booster pack"),
     MAGIC_BOOSTER_BOX("Magic booster box"),
     MAGIC_STARTER_DECK("Magic starter deck"),
     ACCESSORY("Accessory");
 
-    private final String value;
+    private final String label;
 
-    ProductCategory(String value) {
-        this.value = value;
+    ProductCategory(String label) {
+        this.label = label;
     }
 
     @JsonValue
-    public String getValue() {
-        return value;
+    @Override
+    public String getLabel() {
+        return label;
     }
 }

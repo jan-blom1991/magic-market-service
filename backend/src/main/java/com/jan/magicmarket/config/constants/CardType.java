@@ -1,8 +1,9 @@
 package com.jan.magicmarket.config.constants;
 
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.jan.magicmarket.util.Labeled;
 
-public enum CardType {
+public enum CardType implements Labeled<String> {
     PLANESWALKER("Planeswalker"),
     CREATURE("Creature"),
     INSTANT("Instant"),
@@ -11,14 +12,15 @@ public enum CardType {
     ARTIFACT("Artifact"),
     LAND("Land");
 
-    private final String value;
+    private final String label;
 
-    CardType(String value) {
-        this.value = value;
+    CardType(String label) {
+        this.label = label;
     }
 
     @JsonValue
-    public String getValue() {
-        return value;
+    @Override
+    public String getLabel() {
+        return label;
     }
 }

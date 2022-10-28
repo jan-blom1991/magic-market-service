@@ -18,10 +18,8 @@ public class ProductController {
     }
 
     @PostMapping()
-    public Long addProduct(@RequestBody Product product) {
-        product = productService.addProduct(product);
-        System.out.println(product.getId());
-        return product.getId();
+    public void addProduct(@RequestBody Product product) {
+        productService.addProduct(product);
     }
 
     @PutMapping()

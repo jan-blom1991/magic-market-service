@@ -3,6 +3,7 @@ package com.jan.magicmarket.domain;
 import javax.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class File extends BaseEntity {
 
     @Column

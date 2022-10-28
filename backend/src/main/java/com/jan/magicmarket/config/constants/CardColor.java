@@ -1,8 +1,9 @@
 package com.jan.magicmarket.config.constants;
 
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.jan.magicmarket.util.Labeled;
 
-public enum CardColor {
+public enum CardColor implements Labeled<String> {
     WHITE("White"),
     BLUE("Blue"),
     BLACK("Black"),
@@ -12,14 +13,15 @@ public enum CardColor {
     COLORLESS("Colorless"),
     LAND("Land");
 
-    private final String value;
+    private final String label;
 
-    CardColor(String value) {
-        this.value = value;
+    CardColor(String label) {
+        this.label = label;
     }
 
     @JsonValue
-    public String getValue() {
-        return value;
+    @Override
+    public String getLabel() {
+        return label;
     }
 }

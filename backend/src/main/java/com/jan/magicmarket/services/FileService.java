@@ -1,7 +1,7 @@
 package com.jan.magicmarket.services;
 
 import com.jan.magicmarket.domain.ProvisionalFile;
-import com.jan.magicmarket.repositories.FileRepository;
+import com.jan.magicmarket.repositories.ProductFileRepository;
 import com.jan.magicmarket.repositories.ProvisionalFileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,22 +15,25 @@ import java.io.IOException;
 public class FileService {
 
     @Autowired
-    FileRepository fileRepository;
+    ProductFileRepository productFileRepository;
 
     @Autowired
     ProvisionalFileRepository provisionalFileRepository;
 
-    public Long addProvisionalFile(MultipartFile multipartFile) throws IOException {
+    public ProvisionalFile addProvisionalFile(MultipartFile multipartFile, Long fileGroupCode) throws IOException {
         ProvisionalFile provisionalFile = new ProvisionalFile();
         provisionalFile.setFileName(multipartFile.getName());
         provisionalFile.setContentType(multipartFile.getContentType());
         provisionalFile.setSize(multipartFile.getSize());
         provisionalFile.setBytes(multipartFile.getBytes());
 
-        return provisionalFileRepository.save(provisionalFile).getId();
-    }
+        if (fileGroupCode == null) {
+            provisionalFile = provisionalFileRepository.save(provisionalFile);
+            provisionalFile.setFileGroupCode(provisionalFile.getId());
+        } else {
+            provisionalFile.setFileGroupCode(fileGroupCode);
+        }
 
-    public Long getNewProvisionalFileGroup() {
-        return provisionalFileRepository.getMaxFileGroup() + 1;
+        return provisionalFileRepository.save(provisionalFile);
     }
 }
