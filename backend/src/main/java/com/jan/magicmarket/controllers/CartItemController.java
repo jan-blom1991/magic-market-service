@@ -2,7 +2,7 @@ package com.jan.magicmarket.controllers;
 
 
 import com.jan.magicmarket.services.CartItemService;
-import com.jan.magicmarket.domain.CartItem;
+import com.jan.magicmarket.model.CartItem;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

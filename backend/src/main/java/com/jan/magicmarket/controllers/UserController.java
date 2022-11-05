@@ -1,7 +1,7 @@
 package com.jan.magicmarket.controllers;
 
 import com.jan.magicmarket.services.UserService;
-import com.jan.magicmarket.domain.User;
+import com.jan.magicmarket.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,6 @@
 package com.jan.magicmarket.config.constants;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.jan.magicmarket.util.Labeled;
 
 public enum ProductCategory implements Labeled<String> {
     MAGIC_CARD("Magic card"),

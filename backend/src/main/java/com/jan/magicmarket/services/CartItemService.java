@@ -3,7 +3,7 @@ package com.jan.magicmarket.services;
 import com.jan.magicmarket.repositories.CartItemRepository;
 import com.jan.magicmarket.repositories.ProductRepository;
 import com.jan.magicmarket.repositories.CartRepository;
-import com.jan.magicmarket.domain.CartItem;
+import com.jan.magicmarket.model.CartItem;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

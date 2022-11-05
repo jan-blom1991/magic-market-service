@@ -1,5 +1,7 @@
 package com.jan.magicmarket.util;
 
+import com.jan.magicmarket.config.constants.Labeled;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 

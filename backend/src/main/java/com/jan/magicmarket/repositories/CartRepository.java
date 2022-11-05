@@ -1,6 +1,6 @@
 package com.jan.magicmarket.repositories;
 
-import com.jan.magicmarket.domain.Cart;
+import com.jan.magicmarket.model.Cart;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
 package com.jan.magicmarket.repositories;
 
-import com.jan.magicmarket.domain.Address;
+import com.jan.magicmarket.model.Address;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 

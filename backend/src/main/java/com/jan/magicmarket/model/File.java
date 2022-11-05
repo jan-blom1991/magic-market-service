@@ -1,10 +1,19 @@
-package com.jan.magicmarket.domain;
+package com.jan.magicmarket.model;
+
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
+@Table(name = "file")
 @Inheritance(strategy = InheritanceType.JOINED)
+@AttributeOverride(name = "id", column = @Column(name = "file_id"))
 public class File extends BaseEntity {
+
+    public static final Integer DEFAULT_ORDER = 1;
 
     @Column
     private String fileName;
@@ -18,6 +27,9 @@ public class File extends BaseEntity {
     @Lob
     @Column(length=200000)
     private byte[] bytes;
+
+    @Column
+    private Integer order;
 
     public String getFileName() {
         return fileName;
@@ -49,5 +61,13 @@ public class File extends BaseEntity {
 
     public void setBytes(byte[] bytes) {
         this.bytes = bytes;
+    }
+
+    public Integer getOrder() {
+        return order;
+    }
+
+    public void setOrder(Integer order) {
+        this.order = order;
     }
 }

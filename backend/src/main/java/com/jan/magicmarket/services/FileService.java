@@ -1,8 +1,11 @@
 package com.jan.magicmarket.services;
 
-import com.jan.magicmarket.domain.ProvisionalFile;
+import com.jan.magicmarket.model.ProvisionalFile;
 import com.jan.magicmarket.repositories.ProductFileRepository;
 import com.jan.magicmarket.repositories.ProvisionalFileRepository;
+import com.jan.magicmarket.transfer.FileDetail;
+import com.jan.magicmarket.transfer.TransferObject;
+import com.jan.magicmarket.util.TransferObjectBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,9 +23,9 @@ public class FileService {
     @Autowired
     ProvisionalFileRepository provisionalFileRepository;
 
-    public ProvisionalFile addProvisionalFile(MultipartFile multipartFile, Long fileGroupCode) throws IOException {
+    public TransferObject<FileDetail> addProvisionalFile(MultipartFile multipartFile, Long fileGroupCode) throws IOException {
         ProvisionalFile provisionalFile = new ProvisionalFile();
-        provisionalFile.setFileName(multipartFile.getName());
+        provisionalFile.setFileName(multipartFile.getOriginalFilename());
         provisionalFile.setContentType(multipartFile.getContentType());
         provisionalFile.setSize(multipartFile.getSize());
         provisionalFile.setBytes(multipartFile.getBytes());
@@ -30,10 +33,14 @@ public class FileService {
         if (fileGroupCode == null) {
             provisionalFile = provisionalFileRepository.save(provisionalFile);
             provisionalFile.setFileGroupCode(provisionalFile.getId());
+            provisionalFile.setOrder(ProvisionalFile.DEFAULT_ORDER);
         } else {
             provisionalFile.setFileGroupCode(fileGroupCode);
+            provisionalFile.setOrder(provisionalFileRepository.findMaxOrderByFileGroupCode(fileGroupCode) + 1);
         }
 
-        return provisionalFileRepository.save(provisionalFile);
+        provisionalFile = provisionalFileRepository.save(provisionalFile);
+        TransferObjectBuilder builder = new TransferObjectBuilder();
+        return builder.generateFileDetail(provisionalFile);
     }
 }

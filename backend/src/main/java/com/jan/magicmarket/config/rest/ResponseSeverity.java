@@ -1,7 +1,7 @@
 package com.jan.magicmarket.config.rest;
 
-public enum RestResponseSeverity {
+public enum ResponseSeverity {
     SUCCESS,
-    WARN,
+    INFO,
     ERROR
 }

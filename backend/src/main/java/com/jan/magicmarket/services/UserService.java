@@ -4,7 +4,7 @@ import com.jan.magicmarket.repositories.AddressRepository;
 import com.jan.magicmarket.repositories.OrderRepository;
 import com.jan.magicmarket.repositories.CartRepository;
 import com.jan.magicmarket.repositories.UserRepository;
-import com.jan.magicmarket.domain.User;
+import com.jan.magicmarket.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

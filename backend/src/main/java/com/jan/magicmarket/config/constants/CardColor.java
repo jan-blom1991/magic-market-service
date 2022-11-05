@@ -1,7 +1,6 @@
 package com.jan.magicmarket.config.constants;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.jan.magicmarket.util.Labeled;
 
 public enum CardColor implements Labeled<String> {
     WHITE("White"),
