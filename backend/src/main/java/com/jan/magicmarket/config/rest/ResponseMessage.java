@@ -13,7 +13,9 @@ public enum ResponseMessage implements Labeled<String> {
     ENTITY_CREATED("The entity has successfully been created"),
     ENTITY_CHANGED("The entity has successfully been changed"),
     ENTITY_DELETED("The entity has successfully been deleted"),
-    INFORMATION_CHANGED("The information was successfully changed");
+    INFORMATION_CHANGED("The information was successfully changed"),
+    USER_NOT_FOUND("The provided e-mail address could not be found"),
+    USER_PASSWORD_INVALID("The provided password for this user is invalid");
 
     private final String label;
 

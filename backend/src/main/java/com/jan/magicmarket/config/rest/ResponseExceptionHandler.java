@@ -163,7 +163,7 @@ public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {
         ResponseObject<?> response = new ResponseObject<>(
                 HttpStatus.INTERNAL_SERVER_ERROR,
                 ResponseSeverity.ERROR,
-                ResponseMessage.ERROR_OCCURRED,
+                ResponseMessage.ERROR_OCCURRED.getLabel(),
                 Collections.singletonList(ex.toString()));
 
         return handleExceptionInternal(ex, response, new HttpHeaders(), response.getStatus(), request);

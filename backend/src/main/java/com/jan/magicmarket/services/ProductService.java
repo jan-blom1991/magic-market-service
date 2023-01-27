@@ -1,5 +1,6 @@
 package com.jan.magicmarket.services;
 
+import com.jan.magicmarket.config.rest.ResponseObject;
 import com.jan.magicmarket.model.File;
 import com.jan.magicmarket.model.Product;
 import com.jan.magicmarket.model.ProductFile;
@@ -30,7 +31,7 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class ProductService {
+public class ProductService extends BaseService {
 
     @Resource
     ProductRepository productRepository;
@@ -46,15 +47,20 @@ public class ProductService {
     /**
      * Retrieves the specified {@link Product} for a detailed representation.
      * @param productId the identifier of the entity
-     * @return a transfer object containing the {@link ProductDetail} data.
+     * @return a response object containing the {@link ProductDetail} data.
      */
-    public TransferObject<ProductDetail> getProduct(@NonNull Long productId) throws Exception {
-        Product product = productRepository.findById(productId).orElseThrow(Exception::new);
+    public ResponseObject<ProductDetail> getProduct(@NonNull Long productId) {
+        Product product = productRepository.findById(productId).orElse(null);
+
+        if (product == null) {
+            return buildErrorResponse();
+        }
+
         Iterable<ProductFile> collection = productFileRepository.findAllByProductIdOrderByOrder(product.getId());
         collection.forEach(product.getFiles()::add);
 
-        TransferObjectBuilder builder = new TransferObjectBuilder();
-        return builder.generateProductDetail(product);
+        TransferObject<ProductDetail> transferObject = transferObjectBuilder.generateProductDetail(product);
+        return buildSuccessResponse(transferObject);
     }
 
     /**
@@ -65,7 +71,7 @@ public class ProductService {
      * @param size the number of rows in a page
      * @return a transfer object containing a list of {@link ProductOverview} data.
      */
-    public TransferObject<ProductOverview> getProducts(@NonNull String sort,
+    public ResponseObject<ProductOverview> getProducts(@NonNull String sort,
                                                        @Nullable String order,
                                                        @Nullable Integer page,
                                                        @Nullable Integer size) {
@@ -80,11 +86,11 @@ public class ProductService {
             optional.ifPresent(file -> product.getFiles().add(file));
         }
 
-        TransferObjectBuilder builder = new TransferObjectBuilder();
-        return builder.generateProductOverview(productPage);
+        TransferObject<ProductOverview> transferObject = transferObjectBuilder.generateProductOverview(productPage);
+        return buildSuccessResponse(transferObject);
     }
 
-    public TransferObject<ProductDetail> createProduct(@NonNull Product product) throws Exception {
+    public ResponseObject<ProductDetail> createProduct(@NonNull Product product) {
         Long productId = productRepository.save(product).getId();
 
         if (product.getFileGroupCode() != null) {

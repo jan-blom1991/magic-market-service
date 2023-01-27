@@ -1,30 +1,30 @@
 package com.jan.magicmarket.controllers;
 
-import com.jan.magicmarket.config.rest.ResponseUtil;
+import com.jan.magicmarket.config.rest.ResponseObject;
 import com.jan.magicmarket.model.Product;
 import com.jan.magicmarket.services.ProductService;
 import com.jan.magicmarket.transfer.ProductDetail;
 import com.jan.magicmarket.transfer.ProductOverview;
-import com.jan.magicmarket.transfer.TransferObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+
 @RestController
 @RequestMapping("/products")
-public class ProductController {
+public class ProductController extends BaseController {
 
     @Autowired
     ProductService productService;
 
     @GetMapping("/{productId}")
     public ResponseEntity<?> getProduct(@PathVariable Long productId,
-                                        HttpServletRequest request) throws Exception {
+                                        HttpServletRequest request) {
 
-        TransferObject<ProductDetail> transferObject  = productService.getProduct(productId);
-        return ResponseUtil.buildSuccessResponse(transferObject, request);
+        ResponseObject<ProductDetail> responseObject = productService.getProduct(productId);
+        return generateResponse(responseObject, request);
     }
 
     @GetMapping()
@@ -34,24 +34,24 @@ public class ProductController {
                                             @RequestParam Integer size,
                                             HttpServletRequest request) {
 
-        TransferObject<ProductOverview> transferObject = productService.getProducts(sort, order, page, size);
-        return ResponseUtil.buildSuccessResponse(transferObject, request);
+        ResponseObject<ProductOverview> responseObject = productService.getProducts(sort, order, page, size);
+        return generateResponse(responseObject, request);
     }
 
     @PostMapping()
     public ResponseEntity<?> createProduct(@RequestBody Product product,
-                                           HttpServletRequest request) throws Exception {
+                                           HttpServletRequest request) {
 
-        TransferObject<ProductDetail> transferObject = productService.createProduct(product);
-        return ResponseUtil.buildSuccessResponse(transferObject, request);
+        ResponseObject<ProductDetail> responseObject  = productService.createProduct(product);
+        return generateResponse(responseObject, request);
     }
 
     @PutMapping()
     public ResponseEntity<?> updateProduct(@RequestBody Product product,
-                                           HttpServletRequest request) throws Exception {
+                                           HttpServletRequest request) {
 
-        TransferObject<ProductDetail> transferObject = productService.createProduct(product);
-        return ResponseUtil.buildSuccessResponse(transferObject, request);
+        ResponseObject<ProductDetail> responseObject = productService.createProduct(product);
+        return generateResponse(responseObject, request);
     }
 
     @DeleteMapping("/{productId}")
@@ -59,6 +59,6 @@ public class ProductController {
                                            HttpServletRequest request) {
 
         productService.removeProduct(productId);
-        return ResponseUtil.buildSuccessResponse(null, request);
+        return null;
     }
 }

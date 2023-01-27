@@ -21,7 +21,6 @@ public abstract class BaseEntity {
     @Column
     private Timestamp tsChanged;
 
-
     @JoinColumn(name = "user_created_id")
     @ManyToOne(fetch = FetchType.LAZY)
     private User userCreated;

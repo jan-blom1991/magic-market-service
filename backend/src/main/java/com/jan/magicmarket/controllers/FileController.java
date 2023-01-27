@@ -1,9 +1,8 @@
 package com.jan.magicmarket.controllers;
 
-import com.jan.magicmarket.config.rest.ResponseUtil;
+import com.jan.magicmarket.config.rest.ResponseObject;
 import com.jan.magicmarket.services.FileService;
 import com.jan.magicmarket.transfer.FileDetail;
-import com.jan.magicmarket.transfer.TransferObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +16,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/files")
-public class FileController {
+public class FileController extends BaseController {
 
     @Autowired
     FileService fileService;
@@ -27,7 +26,7 @@ public class FileController {
                                                 @RequestParam("fileGroupCode") Long fileGroupCode,
                                                 HttpServletRequest request) throws IOException {
 
-        TransferObject<FileDetail> transferObject = fileService.addProvisionalFile(multipartFile, fileGroupCode);
-        return ResponseUtil.buildSuccessResponse(transferObject, request);
+        ResponseObject<FileDetail> responseObject = fileService.addProvisionalFile(multipartFile, fileGroupCode);
+        return generateResponse(responseObject, request);
     }
 }

@@ -3,11 +3,11 @@ package com.jan.magicmarket.util;
 import com.jan.magicmarket.model.File;
 import com.jan.magicmarket.model.Product;
 import com.jan.magicmarket.model.ProvisionalFile;
-import com.jan.magicmarket.transfer.FileDetail;
-import com.jan.magicmarket.transfer.ProductDetail;
-import com.jan.magicmarket.transfer.ProductOverview;
-import com.jan.magicmarket.transfer.TransferObject;
+import com.jan.magicmarket.model.User;
+import com.jan.magicmarket.transfer.*;
 import org.springframework.data.domain.Page;
+
+import java.util.ArrayList;
 
 public class TransferObjectBuilder {
 
@@ -33,6 +33,7 @@ public class TransferObjectBuilder {
         int index = page.getPageable().getPageNumber() * page.getPageable().getPageSize() + 1;
 
         TransferObject<ProductOverview> transferObject = new TransferObject<>();
+        transferObject.items = new ArrayList<>();
         transferObject.total = page.getTotalElements();
 
         for (Product product : page.getContent()) {
@@ -63,6 +64,24 @@ public class TransferObjectBuilder {
                 provisionalFile.getBytes(),
                 provisionalFile.getOrder(),
                 provisionalFile.getFileGroupCode()
+        );
+
+        return transferObject;
+    }
+
+    public TransferObject<UserDetail> generateUserDetail(User user) {
+
+        TransferObject<UserDetail> transferObject = new TransferObject<>();
+        transferObject.changeToken = user.getTsChanged();
+        transferObject.item = new UserDetail(
+                user.getId(),
+                user.getFirstName(),
+                user.getLastName(),
+                user.getGender(),
+                user.getEmailAddress(),
+                user.getIBAN(),
+                user.getRole(),
+                user.getActive()
         );
 
         return transferObject;

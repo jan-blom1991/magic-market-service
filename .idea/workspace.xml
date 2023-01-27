@@ -23,67 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/FileDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/ProductDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/ProductOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/TransferObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/ExceptionReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/PageRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/TransferObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/UserDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/CardType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponseMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/RestResponseSeverity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseSeverity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/CartItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/CartItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/AbstractController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CardManaTypeCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CardManaTypeCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/ProductFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/ProductFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/ProvisionalFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/ProvisionalFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/AddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/AddressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/CartItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/CartItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/CartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProvisionalFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProvisionalFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/CartItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/CartItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/EnumUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/EnumUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/Labeled.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/constants/Labeled.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/TransferObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/TransferObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/TransferObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/TransferObjectBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,34 +84,31 @@
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1aV9SWf1KYOwgHUfIubuXm3Tm3n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="db2&#10;mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b43fdd98b1fd705ae4c3a10cf25aad8a&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Programming\Java files\MagicWebShop\Backend\src\main\resources\static\assets" />
@@ -381,7 +335,19 @@
       <workItem from="1667291636732" duration="14144000" />
       <workItem from="1667377443351" duration="19906000" />
       <workItem from="1667558917689" duration="5905000" />
-      <workItem from="1667637697936" duration="622000" />
+      <workItem from="1667637697936" duration="1270000" />
+      <workItem from="1673128387850" duration="680000" />
+      <workItem from="1673130813398" duration="792000" />
+      <workItem from="1673432600282" duration="597000" />
+      <workItem from="1673518637239" duration="951000" />
+      <workItem from="1673607684425" duration="1213000" />
+      <workItem from="1673722920737" duration="607000" />
+      <workItem from="1673872541453" duration="786000" />
+      <workItem from="1674478799768" duration="1296000" />
+      <workItem from="1674675015576" duration="8655000" />
+      <workItem from="1674726969157" duration="11192000" />
+      <workItem from="1674751049679" duration="3358000" />
+      <workItem from="1674813576260" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1604761476615</created>
@@ -439,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666951628768</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="10th commit">
+      <created>1667639130060</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667639130060</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +434,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -476,7 +448,8 @@
     <MESSAGE value="7th commit" />
     <MESSAGE value="8th commit" />
     <MESSAGE value="9th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="9th commit" />
+    <MESSAGE value="10th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="10th commit" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
