@@ -23,20 +23,4 @@ public class CardManaTypeCost extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "card_id")
     private Card card;
-
-    public CardManaType getManaType() {
-        return manaType;
-    }
-
-    public void setManaType(CardManaType manaType) {
-        this.manaType = manaType;
-    }
-
-    public Integer getCost() {
-        return cost;
-    }
-
-    public void setCost(Integer cost) {
-        this.cost = cost;
-    }
 }

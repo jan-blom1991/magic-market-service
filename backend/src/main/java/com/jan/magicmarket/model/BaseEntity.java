@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -16,10 +16,10 @@ public abstract class BaseEntity {
     protected Long id;
 
     @Column
-    private Timestamp tsCreated;
+    private LocalDateTime tsCreated;
 
     @Column
-    private Timestamp tsChanged;
+    private LocalDateTime tsChanged;
 
     @JoinColumn(name = "user_created_id")
     @ManyToOne(fetch = FetchType.LAZY)

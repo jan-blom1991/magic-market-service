@@ -41,6 +41,6 @@ public class FileService extends BaseService {
 
         provisionalFile = provisionalFileRepository.save(provisionalFile);
         TransferObject<FileDetail> transferObject = transferObjectBuilder.generateFileDetail(provisionalFile);
-        return buildSuccessResponse(transferObject);
+        return buildResponse(transferObject);
     }
 }

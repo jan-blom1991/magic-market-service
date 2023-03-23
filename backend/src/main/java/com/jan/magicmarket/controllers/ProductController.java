@@ -21,7 +21,7 @@ public class ProductController extends BaseController {
 
     @GetMapping("/{productId}")
     public ResponseEntity<?> getProduct(@PathVariable Long productId,
-                                        HttpServletRequest request) {
+                                        HttpServletRequest request) throws Exception {
 
         ResponseObject<ProductDetail> responseObject = productService.getProduct(productId);
         return generateResponse(responseObject, request);
@@ -40,7 +40,7 @@ public class ProductController extends BaseController {
 
     @PostMapping()
     public ResponseEntity<?> createProduct(@RequestBody Product product,
-                                           HttpServletRequest request) {
+                                           HttpServletRequest request) throws Exception {
 
         ResponseObject<ProductDetail> responseObject  = productService.createProduct(product);
         return generateResponse(responseObject, request);
@@ -48,7 +48,7 @@ public class ProductController extends BaseController {
 
     @PutMapping()
     public ResponseEntity<?> updateProduct(@RequestBody Product product,
-                                           HttpServletRequest request) {
+                                           HttpServletRequest request) throws Exception {
 
         ResponseObject<ProductDetail> responseObject = productService.createProduct(product);
         return generateResponse(responseObject, request);

@@ -19,20 +19,4 @@ public class Cart extends BaseEntity {
 
     @OneToMany(mappedBy = "cart")
     private Set<CartItem> cartItemList = new HashSet<>();
-
-    public Double getSubTotal() {
-        return subTotal;
-    }
-
-    public void setSubTotal(Double subTotal) {
-        this.subTotal = subTotal;
-    }
-
-    public Set<CartItem> getCartItemList() {
-        return cartItemList;
-    }
-
-    public void setCartItemList(Set<CartItem> cartItemList) {
-        this.cartItemList = cartItemList;
-    }
 }

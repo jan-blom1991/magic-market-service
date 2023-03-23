@@ -11,8 +11,6 @@ import com.jan.magicmarket.repositories.ProvisionalFileRepository;
 import com.jan.magicmarket.transfer.ProductDetail;
 import com.jan.magicmarket.transfer.ProductOverview;
 import com.jan.magicmarket.transfer.TransferObject;
-import com.jan.magicmarket.util.EntityNotFoundException;
-import com.jan.magicmarket.util.ExceptionReference;
 import com.jan.magicmarket.util.PageRequestUtil;
 import com.jan.magicmarket.util.TransferObjectBuilder;
 import org.springframework.beans.BeanUtils;
@@ -42,25 +40,19 @@ public class ProductService extends BaseService {
     @Resource
     ProvisionalFileRepository provisionalFileRepository;
 
-    ExceptionReference<Product> reference = new ExceptionReference<>(Product.class);
-
     /**
      * Retrieves the specified {@link Product} for a detailed representation.
      * @param productId the identifier of the entity
      * @return a response object containing the {@link ProductDetail} data.
      */
-    public ResponseObject<ProductDetail> getProduct(@NonNull Long productId) {
-        Product product = productRepository.findById(productId).orElse(null);
-
-        if (product == null) {
-            return buildErrorResponse();
-        }
+    public ResponseObject<ProductDetail> getProduct(@NonNull Long productId) throws Exception {
+        Product product = productRepository.retrieve(productId);
 
         Iterable<ProductFile> collection = productFileRepository.findAllByProductIdOrderByOrder(product.getId());
         collection.forEach(product.getFiles()::add);
 
         TransferObject<ProductDetail> transferObject = transferObjectBuilder.generateProductDetail(product);
-        return buildSuccessResponse(transferObject);
+        return buildResponse(transferObject);
     }
 
     /**
@@ -87,10 +79,10 @@ public class ProductService extends BaseService {
         }
 
         TransferObject<ProductOverview> transferObject = transferObjectBuilder.generateProductOverview(productPage);
-        return buildSuccessResponse(transferObject);
+        return buildResponse(transferObject);
     }
 
-    public ResponseObject<ProductDetail> createProduct(@NonNull Product product) {
+    public ResponseObject<ProductDetail> createProduct(@NonNull Product product) throws Exception {
         Long productId = productRepository.save(product).getId();
 
         if (product.getFileGroupCode() != null) {
@@ -113,13 +105,10 @@ public class ProductService extends BaseService {
     public TransferObject<ProductDetail> updateProduct(@NonNull Product product,
                                                        @NonNull LocalDateTime changeToken) throws Exception {
 
-        reference.setId(product.getId());
-
-        product = productRepository.findById(product.getId()).orElseThrow(() -> new EntityNotFoundException(reference));
-
+        product = productRepository.retrieve(product.getId());
 
         TransferObjectBuilder builder = new TransferObjectBuilder();
-        return builder.generateProductDetail(productRepository.save(product));
+        return builder.generateProductDetail(productRepository.update(product, null, changeToken));
     }
 
     public void removeProduct(@NonNull Long productId) {

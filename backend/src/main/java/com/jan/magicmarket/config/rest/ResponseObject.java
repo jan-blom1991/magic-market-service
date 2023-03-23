@@ -9,7 +9,6 @@ import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @Setter
@@ -21,7 +20,6 @@ public class ResponseObject<T> {
     private ResponseSeverity severity;
     private String message;
     private TransferObject<T> body = null;
-    private List<String> errors = null;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
     private final LocalDateTime timestamp;
@@ -41,12 +39,6 @@ public class ResponseObject<T> {
     public ResponseObject(HttpStatus status, ResponseSeverity severity, String message) {
         this(status, severity);
         this.message = message;
-    }
-
-    public ResponseObject(HttpStatus status, ResponseSeverity severity, String message, List<String> errors) {
-        this(status, severity);
-        this.message = message;
-        this.errors = errors;
     }
 
     public ResponseObject(HttpStatus status, ResponseSeverity severity, String message, TransferObject<T> body) {
