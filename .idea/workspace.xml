@@ -23,30 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef2c05d-28d1-4b0b-87fc-ad4fab45ab30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/EntityIdentifierException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/EntityTokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/magic-market-be.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/config/rest/ResponseObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CardManaTypeCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CardManaTypeCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/TransferObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/transfer/TransferObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/EntityNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/jan/magicmarket/util/ExceptionReference.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +65,6 @@
       </set>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/Enum.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -111,6 +88,9 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;b43fdd98b1fd705ae4c3a10cf25aad8a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -367,6 +347,12 @@
       <workItem from="1676297305309" duration="5278000" />
       <workItem from="1676541986217" duration="1263000" />
       <workItem from="1679572776403" duration="5938000" />
+      <workItem from="1680709078176" duration="2899000" />
+      <workItem from="1680776902103" duration="3613000" />
+      <workItem from="1680863323858" duration="691000" />
+      <workItem from="1680881590379" duration="136000" />
+      <workItem from="1680881829272" duration="620000" />
+      <workItem from="1680941443849" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1604761476615</created>
